@@ -14,8 +14,6 @@ def go_to_url(context, url):
 
 @step('I login to twitter setting remember me to (yes|no)')
 def login_to_twitter(context, remember):
-    # context.driver.find_element_by_class_name('StaticLoggedOutHomePage-buttonLogin').click()
-    # context.driver.find_element_by_xpath('//*[@id="page-container"]/div/div[1]/form/fieldset/div[1]/input').send_keys('jkopftest')
     context.driver.find_element_by_class_name("js-username-field").send_keys('jkopftest')
     context.driver.find_element_by_class_name("js-password-field").send_keys('P@ssw0rd')
     if remember == "no":
