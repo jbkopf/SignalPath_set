@@ -1,4 +1,3 @@
 behave
-selenium
-requests
+selenium 4.0.0a1
 nose
